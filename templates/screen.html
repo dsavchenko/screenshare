@@ -32,13 +32,21 @@ along with Screenshare. If not, see <https://www.gnu.org/licenses/>.
 <link rel="stylesheet" href="{{url_for('static', filename='css/jquery-confirm.min.css')}}"/>
 
 <link rel="stylesheet" href="{{url_for('static', filename='css/common.css')}}?ver=2"/>
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min..css')}}?ver=2"/>
+
 {% endblock %}
 
 {% block scripts %}
 {{super()}}
+
+<script src="{{url_for('static', filename='js/jquery.min.css')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.css')}}"></script>
+
 <script src="{{url_for('static', filename='js/jquery-confirm.min.js')}}"></script>
 
 <script src="{{url_for('static', filename='js/screen.js')}}?ver=3"></script>
+
 {% endblock %}
 
 {% block body_attribs %}
