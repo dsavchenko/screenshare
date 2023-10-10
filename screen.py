@@ -23,12 +23,7 @@ if ver==2:
 elif ver==3:
     import io
 
-if sys.platform in ["win32", "darwin"]:
-    from PIL import ImageGrab as ig
-else:
-    import pyscreenshot as ig
-    bkend = "pygdk3"
-
+from PIL import ImageGrab as ig
 
 class Screen():
     def __init__(self):
@@ -46,10 +41,7 @@ class Screen():
 
     def getframes(self):
         while True:
-            if sys.platform in ["win32", "darwin"]:
-                im = ig.grab()
-            else:
-                im = ig.grab(childprocess=False,backend=bkend)
+            im = ig.grab()
             self.screenfile.seek(0)
             self.screenfile.truncate(0)
             im_converted = im.convert("RGB")
