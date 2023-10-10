@@ -26,7 +26,9 @@ secret_key = u'f71b10b68b1bc00019cfc50d6ee817e75d5441bd5db0bd83453b398225cede69'
 
 app = Flask(__name__)
 app.secret_key = secret_key
+app.config['BOOTSTRAP_SERVE_LOCAL'] = True
 Bootstrap(app)
+
 
 ###### general ##########################################
 @app.route('/')
