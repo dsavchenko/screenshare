@@ -27,7 +27,7 @@ from PIL import ImageGrab as ig
 
 class Screen():
     def __init__(self):
-        self.FPS = 10
+        self.FPS = 4
         self.screenbuf = ""
         self.password = ""
         if ver==2:

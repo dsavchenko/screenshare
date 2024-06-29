@@ -67,7 +67,7 @@ def screenfeed():
 ### main ###
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("-p", "--port", help="port, default 18331", type=int, default=18331)
+    parser.add_argument("-p", "--port", help="port, default 8888", type=int, default=8888)
     parser.add_argument("-w", "--password", help="password, default no password", default="")
     parser.add_argument("-s", "--https", help="enable https, default http", action="store_true")
     parser.add_argument("-c", "--cert", help="certificate file")

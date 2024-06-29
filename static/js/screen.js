@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with Screenshare. If not, see <https://www.gnu.org/licenses/>.
 */
 
-var frameinterval = 200;     // 200 milliseconds means 5 frames per second
+var frameinterval = 500;     // 200 milliseconds means 5 frames per second
 var frameerrcount = 0;
 var screenfeedtimeout = null;
 
