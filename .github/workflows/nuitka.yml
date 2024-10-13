@@ -3,7 +3,8 @@ name: Build-All-Platforms
 on:
   push:
     branches: ["master"]
-
+  pull_request:
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -34,6 +35,7 @@ jobs:
             script-name: screenshare.py
             standalone: true
             include-package-data: |
+              flask
               flask_bootstrap
   
         - name: Upload Artifacts
