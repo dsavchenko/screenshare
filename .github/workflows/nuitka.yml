@@ -2,7 +2,7 @@ name: Build-All-Platforms
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   workflow_dispatch:
 
@@ -36,12 +36,12 @@ jobs:
             include-package-data: |
               flask_bootstrap
   
-        # - name: Upload Artifacts
-        #   uses: actions/upload-artifact@v4
-        #   with:
-        #     name: ${{ runner.os }} Build
-        #     path: |
-        #       build/*.exe
-        #       build/*.bin
-        #       build/*.app/**/*
-        #     include-hidden-files: true
+        - name: Upload Artifacts
+          uses: actions/upload-artifact@v4
+          with:
+            name: ${{ runner.os }} Build
+            path: |
+              build/*.exe
+              build/*.bin
+              build/*.app/**/*
+            include-hidden-files: true
