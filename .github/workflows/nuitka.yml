@@ -49,6 +49,5 @@ jobs:
               build/*.exe
               build/*.bin
               build/*.app/**/*
-              build/static/**
-              build/templates/**
+              build/*.dist/**
             include-hidden-files: true
