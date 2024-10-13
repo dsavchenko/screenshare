@@ -34,11 +34,12 @@ jobs:
             nuitka-version: main
             script-name: screenshare.py
             standalone: true
+            onefile: false
             include-package-data: |
               flask_bootstrap
             include-data-dir: |
               static=static
-              templates=tamplates
+              templates=templates
   
         - name: Upload Artifacts
           uses: actions/upload-artifact@v4
