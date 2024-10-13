@@ -35,8 +35,10 @@ jobs:
             script-name: screenshare.py
             standalone: true
             include-package-data: |
-              flask
               flask_bootstrap
+            include-data-dir: |
+              static
+              templates
   
         - name: Upload Artifacts
           uses: actions/upload-artifact@v4
