@@ -33,8 +33,7 @@ jobs:
           with:
             nuitka-version: main
             script-name: screenshare.py
-            standalone: true
-            onefile: false
+            mode: standalone
             include-package-data: |
               flask_bootstrap
             include-data-dir: |
